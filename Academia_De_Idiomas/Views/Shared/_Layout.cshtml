@@ -30,7 +30,21 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Inicio de Sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Idiomas</a>
+                            <div class="dropdown">
+                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Idiomas
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Ingles" })">Inglés</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Español" })">Español</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Frances" })">Frances</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Aleman" })">Aleman</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Italiano" })">Italiano</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Japones" })">Japones</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Ruso" })">Ruso</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Idiomas", "Idiomas", new{ idioma = "Portugues" })">Portugues</a></li>
+                              </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PlanCurso">Plan de Curso</a>
