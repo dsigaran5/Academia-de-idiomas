@@ -1,29 +1,35 @@
 ﻿@{
-    ViewData["Title"] = "Idiomas";
+    ViewData["Title"] = $"Idiomas";
 }
 
+
+
 <header id="header-idiomas">
-    <h1>@ViewBag.idioma</h1>
+    <h1>Aprende @ViewBag.idioma</h1>
 </header>
 
 <div id="main-idiomas">
     <section>
-        <h2>aaaa</h2>
+        <h2>La forma más rápida y efectiva de aprender @ViewBag.idioma</h2>
         <p>
-            lajdksdjsadjka
+            @ViewBag.parrafo
+        </p>
+        <p>
+            @ViewBag.parrafo2
         </p>
     </section>
     
     <section>
-        <h2>ajksjdkasjd</h2>
-        
-        <ul>
-            kjasjdkasjkd
-        </ul>
+        <h2>Beneficios de aprender @ViewBag.idioma</h2>
 
- @*       <img />*@
+        <ul>
+            @foreach(string Beneficios in ViewBag.Beneficios)
+            {
+                <li>@Beneficios</li>
+            }
+        </ul>
 
     </section>
 
-    <button type="button" class="btn btn-primary" href="#">Obtener Curso</button>
+    <button type="button" class="btn btn-primary" href=@Url.Action("Usuario", "Registro")>Obtener Curso</button>
 </div>
