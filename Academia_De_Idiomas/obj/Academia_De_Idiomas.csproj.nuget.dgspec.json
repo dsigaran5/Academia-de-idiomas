@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rique\\OneDrive\\Desktop\\Academia_De_Idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj": {}
+    "C:\\Users\\rique\\Documents\\GitHub\\Academia-de-idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rique\\OneDrive\\Desktop\\Academia_De_Idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj": {
+    "C:\\Users\\rique\\Documents\\GitHub\\Academia-de-idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rique\\OneDrive\\Desktop\\Academia_De_Idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj",
+        "projectUniqueName": "C:\\Users\\rique\\Documents\\GitHub\\Academia-de-idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj",
         "projectName": "Academia_De_Idiomas",
-        "projectPath": "C:\\Users\\rique\\OneDrive\\Desktop\\Academia_De_Idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj",
+        "projectPath": "C:\\Users\\rique\\Documents\\GitHub\\Academia-de-idiomas\\Academia_De_Idiomas\\Academia_De_Idiomas.csproj",
         "packagesPath": "C:\\Users\\rique\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rique\\OneDrive\\Desktop\\Academia_De_Idiomas\\Academia_De_Idiomas\\obj\\",
+        "outputPath": "C:\\Users\\rique\\Documents\\GitHub\\Academia-de-idiomas\\Academia_De_Idiomas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rique\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

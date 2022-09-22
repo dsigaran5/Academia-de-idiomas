@@ -1,7 +1,15 @@
+using Academia_De_Idiomas.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var Cnn = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AplicacionDbContext>(
+    opciones => opciones.UseSqlServer(Cnn));
 
 var app = builder.Build();
 
@@ -22,6 +30,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Usuario}/{action=Registro}/{id?}");
 
 app.Run();

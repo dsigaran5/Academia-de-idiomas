@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Academia_De_Idiomas.Context;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Academia_De_Idiomas.Controllers
 {

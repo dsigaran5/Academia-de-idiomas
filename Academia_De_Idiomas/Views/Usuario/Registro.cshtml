@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Academia_De_Idiomas.Context
+@{
     ViewData["Title"] = "Registro de usuario";
 }
 
@@ -16,40 +17,69 @@
     </section>
 
     <div class="container" id="form-registro">
-        <form>
+        <form method="post">
             <h2>Regístrate</h2>
 
             <div class="input-field">
                 <i class="bi bi-person-circle"></i>
-                <input type="text" placeholder="Nombre"/>
+                <input name="NomAlum" type="text" placeholder="Nombre"/>
             </div>
             <div class="input-field">
                 <i class="bi bi-person-circle"></i>
-                <input type="text" placeholder="Apellido"/>
+                <input name="ApeAlum" type="text" placeholder="Apellido"/>
             </div>
             <div class="input-field">
                 <i class="bi bi-envelope"></i>
-                <input type="email" placeholder="Gmail"/>
+                <input name="Correo" type="email" placeholder="Gmail"/>
             </div>
             <div class="input-field">
                 <i class="bi bi-telephone"></i>
-                <input type="tel" placeholder="Teléfono"/>
+                <input name="Telefono" type="tel" placeholder="Teléfono"/>
             </div>
             <div class="input-field">
                 <i class="bi bi-lock-fill"></i>
-                <input type="password" placeholder="Contraseña"/>
+                <input name="Contraseña" type="password" placeholder="Contraseña"/>
             </div>
-            <div class="input-field">
-                <i class="bi bi-at"></i>
-                <input type="text" placeholder="idiomas"/>
-            </div>
-            <div class="input-field">
-                <i class="bi bi-at"></i>
-                <input type="text" placeholder="Presencial - semanal"/>
-            </div>
+            <div class="btn">
+           @*     <select name="idioma" >
+                    <option selected disabled>Idiomas</option>
+                     @foreach(var idioma in ViewBag.idiomas)
+                        {
+                            <option value="@idioma.Id">@idioma.Id = @idioma.NomIdioma</option>
+                        }
+                </select>*@
 
-            <input type="submit" value="Registrarse" class="btn btn-primary"/>
+                <select name="CodIdioma" >
+                    <option selected disabled>Idiomas</option>
+                     <option value="dennis">DENNIS</option>
+                     <option value="hector">HECTOR</option>
+                </select>
+            </div>
+           @* <div class="btn">
+                <select name="modalidad">
+                    <option selected disabled>Modalidad</option>
+                     @foreach(Modalidad modalidad in ViewBag.modalidad)
+                        {
+                            <option value="@modalidad.NomModalidad">@modalidad.NomModalidad</option>
+                        }
+                </select>
+            </div>*@
+
+
+            <button type="submit" value="Registrarse" class="btn btn-primary">Inscribirse</button>
         </form>
+
+        <h2>
+            @ViewBag.nombre;
+            @ViewBag.apellido;
+            @ViewBag.gmail;
+            @ViewBag.Telefono;
+            @ViewBag.Contraseña;
+@*            @ViewBag.idioma;
+            @ViewBag.modalidad;*@
+        </h2>
+
+        <h2></h2>
     </div>
 </div>
 
