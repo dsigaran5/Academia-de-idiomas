@@ -43,13 +43,12 @@
             <div class="btn">
                 <select name="idioma" >
                     <option selected disabled>Idiomas</option>
-
-                    us
-                     @*@foreach(var idioma in ViewBag.idiomas)
+                     @foreach(var idioma in ViewBag.idiomas)
                         {
                             <option value="@idioma.Id">@idioma.Id = @idioma.NomIdioma</option>
-                        }*@
+                        }
                 </select>
+                        </div>
 
            @* <div class="btn">
                 <select name="modalidad">

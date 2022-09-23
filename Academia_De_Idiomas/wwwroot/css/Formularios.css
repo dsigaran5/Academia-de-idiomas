@@ -71,3 +71,40 @@ form{
         outline: none;
         border: none;
     }
+
+/*------------------------------------Inicio de sesion-------------------------------------*/
+
+#main-registro {
+    /*    border: solid;
+    border-color: red;*/
+    display: flex;
+    margin-left: -90px;
+    margin-right: -90px;
+    font-size: large;
+}
+
+form {
+    align-content: center;
+/*    background-color: red;*/
+    margin-inline: 18%;
+}
+
+form > img{/*
+    border: solid;*/
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+#form-sesion {
+    /*    border: solid;
+    border-color: aqua;*/
+    margin: 10px;
+    height: 500px;
+}
+
+
+/*
+label{
+    text-align: center;
+    background-color: red;
+}*/

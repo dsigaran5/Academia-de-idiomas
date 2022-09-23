@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Inicio de Sesión";
+}
+
+<div id="main-inicio-sesion">
+    <div class="container" id="form-sesion">
+        <form>
+            <h2>Iniciar sesión en</h2>
+            <img src="~/Imagenes/Logo - Academia de idiomas.png"/>
+
+            <div class="input-field">
+                <i class="bi bi-person-circle"></i>
+                <input name="Usuario" type="text" placeholder="Nombre de usuario"/>
+            </div>
+            <div class="input-field">
+                <i class="bi bi-lock-fill"></i>
+                <input name="Contraseña" type="password" placeholder="Contraseña"/>
+            </div>
+            <div class="btn">
+                <button type="submit" value="Registrarse" class="btn btn-primary">Iniciar Sesión</button>
+            </div>
+        </form>
+        <label>¿Aún no tienes una cuenta? <a asp-area="" asp-controller="Usuario" asp-action="Registro">Regístrate aquí</a></label>
+    </div>
+</div>
